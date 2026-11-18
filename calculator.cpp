@@ -12,4 +12,19 @@ extern "C" {    // using 'C' linkage instead of 'C++' linkage
         return a + b;
     }
 
+    EMSCRIPTEN_KEEPALIVE
+    int subtract(int a, int b) {
+        return a - b;
+    }
+
+    EMSCRIPTEN_KEEPALIVE
+    int multiple(int a, int b) {
+        return a * b;
+    }
+
+    EMSCRIPTEN_KEEPALIVE
+    int mod(int a, int b) {
+        return a % b;
+    }
+
 }
